@@ -566,7 +566,7 @@
             s,
             v,
             changeEvents = new Array(),
-            fireChangeEvents = 
+            fireChangeEvents =
               function(context)
               {
                 for (var i = 0; i < changeEvents.length; i++) changeEvents[i].call($this, $this, context);
@@ -1852,7 +1852,7 @@
                 commitCallback = null;
                 cancelCallback = null;
                 liveCallback = null;
-                container.html('');
+                container.remove();
                 for (i = 0; i < List.length; i++) if (List[i] == $this) List.splice(i, 1);
               },
             images = settings.images, // local copies for YUI compressor
